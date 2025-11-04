@@ -1,0 +1,25 @@
+notepad .git\info\exclude
+
+-> contenuto del file :
+
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+backend/           <--obbligatorio
+
+
+-----------------------------------------------------
+
+git rm -r --cached directory_da_ignorare
+
+git add .
+git commit -m "push senza directory "
+git push
+
+------------------------------------------------------
+
+
+push sul branch !! attenzione -> se fatto direttamente push sul main, lo rimuove !!
